@@ -1,0 +1,12 @@
+// Code your design here
+module fa_s(
+  input a,b,c,
+  output sum,carry);
+  wire x1,a1,a2;
+ 	 xor(x1,a,b);
+ 	 xor(sum,x1,c);
+     and(a1,x1,c);
+ 	 and(a2,a,b);
+  	 or(carry,a1,a2);
+endmodule
+  
